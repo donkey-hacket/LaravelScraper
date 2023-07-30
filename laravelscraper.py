@@ -107,7 +107,7 @@ def download_html_files(filename):
         ip_port = ip_port.strip()
         if not ip_port:
             continue
-
+        print("handling--  {ip_port}")
         ip, port = ip_port.split(":")
         url = f"http://{ip}:{port}"
         html_filename = os.path.join(folder_name, f"{ip}.html")
